@@ -8,7 +8,6 @@ start:
     xor cx, cx ; counter
     xor si, si ; vetor
     xor dx, dx
-    mov ds, ax
     call read
     xor ax, ax
     call return
@@ -69,7 +68,7 @@ final:
     je .return
         mov ah, 0eh
         mov bh, 0
-        mov bx, dx
+        mov bl, dl
         int 10h
         jmp final
         
