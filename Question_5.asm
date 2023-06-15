@@ -8,7 +8,7 @@ start:
     xor cx, cx ; counter
     xor si, si ; vetor
     xor dx, dx
-    mov ds, ax
+    ;mov ds, ax
     call read
     xor ax, ax
     call return
