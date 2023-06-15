@@ -12,6 +12,7 @@ start:
     mov ah, 0
     mov al, 12h
     int 10h
+    xor ax, ax
     call read
     xor ax, ax
     call return
