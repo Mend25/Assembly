@@ -1,6 +1,6 @@
 org 0x7c00 ; todo codigo começa com isso
 jmp start
-msg db "Como e facil trocar de cor"
+msg db "Como e facil trocar de cor", 0
 
 start:
     xor ax, ax ; valor
