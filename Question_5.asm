@@ -16,7 +16,7 @@ start:
     xor si, si
     mov si, msg
     call final
-    call done
+    jmp done
 
 read:  ;ler a entrada
     call get_char
