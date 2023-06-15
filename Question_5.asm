@@ -13,6 +13,7 @@ start:
     call return
     xor si, si
     call adapt
+    mov ax, dx
     xor si, si
     mov si, msg
     mov bl, 0xf
