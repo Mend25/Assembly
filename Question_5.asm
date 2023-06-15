@@ -8,9 +8,7 @@ start:
     xor cx, cx ; counter
     xor si, si ; vetor
     xor dx, dx
-    mov ah, 0
-    mov al, 12h
-    int 10h
+    call screen
     xor ax, ax
     mov bl, 0xf
     call read
@@ -81,7 +79,12 @@ final:
     .return:
         ret
     
-    
+sceen:
+    mov ah, 0
+    mov al, 12h
+    int 10h
+    ret
+
 done:
     jmp $
     
