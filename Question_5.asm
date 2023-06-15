@@ -68,7 +68,7 @@ final:
     je .return
         mov ah, 0eh
         mov bh, 0
-        mov bx, dx
+        mov bl, dl
         int 10h
         jmp final
         
