@@ -54,7 +54,6 @@ adapt: ; adaptar o vetor para um numero normal
     mov dx, ax
     cmp cx, 2
     je .dezena
-        xor ax, ax
         ret
     .dezena:
         xor ax, ax
