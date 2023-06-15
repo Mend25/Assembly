@@ -14,6 +14,7 @@ start:
     xor si, si
     call adapt
     mov ax, dx
+    add ax, '0'
     call put_char
     xor si, si
     mov si, msg
