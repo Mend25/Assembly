@@ -13,6 +13,7 @@ start:
     mov al, 12h
     int 10h
     xor ax, ax
+    mov bl, 0xf
     call read
     xor ax, ax
     call return
@@ -20,7 +21,7 @@ start:
     call adapt
     xor si, si
     mov si, msg
-    mov bl, 0xf
+
     call final
     jmp done
 
