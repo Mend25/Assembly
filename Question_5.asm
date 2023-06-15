@@ -8,7 +8,6 @@ start:
     xor cx, cx ; counter
     xor si, si ; vetor
     xor dx, dx
-    mov ds, ax
     mov ah, 0
     mov al, 12h
     int 10h
