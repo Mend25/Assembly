@@ -79,7 +79,7 @@ final:
     .return:
         ret
     
-sceen:
+screen:
     mov ah, 0
     mov al, 12h
     int 10h
