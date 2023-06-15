@@ -18,7 +18,7 @@ start:
     xor si, si
     mov si, msg
     mov bl, 0xf
-    call final
+    ;call final
     jmp done
 
 read:  ;ler a entrada
