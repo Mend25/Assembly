@@ -9,6 +9,7 @@ start:
     xor si, si ; vetor
     xor dx, dx
     call read
+    xor ax, ax
     call return
     xor si, si
     call adapt
