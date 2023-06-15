@@ -15,6 +15,7 @@ start:
     call adapt
     xor si, si
     mov si, msg
+    mov bl, 0xf
     call final
     jmp done
 
