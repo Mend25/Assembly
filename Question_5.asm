@@ -33,9 +33,9 @@ read:  ;ler a entrada
     
     
 return: ;função p ler o enter
-    mov ah, 0x0a
+    mov ax, 0x0a
     call put_char
-    mov ah, 0x0d ; segunda parte do enter
+    mov ax, 0x0d ; segunda parte do enter
     call put_char
     ret
 
@@ -68,7 +68,7 @@ final:
     je .return
         mov ah, 0eh
         mov bh, 0
-        mov bl, dl
+        mov bx, dx
         int 10h
         jmp final
         
